@@ -6,6 +6,7 @@ const AppContainer = ({title, children}) => {
         <div class="card">
             <div class="card-header">{title}</div>
             <div class="card-body">
+                {children}
             </div>
         </div>
     </section> 
