@@ -2,14 +2,25 @@ import React from 'react';
 
 const Home = () => {
     return(
-        <section class="card">
-            <div class="card-header">Featured</div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <section className="container">
+            <div class="card">
+                <div class="card-header">CRUD</div>
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                   <div className="table-responsive">
+                       <table className="table table-striped" mt-4>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Title</th>
+                                    <th>Descreption</th>
+                                </tr>
+                            </thead>
+                       </table>
+                   </div>
+                </div>
             </div>
-        </section>
+        </section> 
     );
 };
 
