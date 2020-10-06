@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { Link } from 'react-router-dom';
+import AppContainer from './AppContainer';
 
 const Home = () => {
     return(
-        <section className="container">
-            <div class="card">
-                <div class="card-header">CRUD</div>
-                <div class="card-body">
-                    <Link to="/add" class="btn btn-primary">Go somewhere</Link>
+        <AppContainer
+        
+            title="CRUD"
+            Children
+        >
+             <Link to="/add" class="btn btn-primary">Go somewhere</Link>
                    <div className="table-responsive">
                        <table className="table table-striped" mt-4>
                             <thead>
@@ -31,9 +33,8 @@ const Home = () => {
                             </tbody>
                        </table>
                    </div>
-                </div>
-            </div>
-        </section> 
+        </AppContainer>
+                   
     );
 };
 
